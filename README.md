@@ -4,8 +4,6 @@ This package provides Haystack components for integrating ElevenLabs Text-to-Spe
 
 ## Installation
 
-Use Poetry to install the package:
-
 ```bash
 pip install elevenlabs_haystack
 ```
