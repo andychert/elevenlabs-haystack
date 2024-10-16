@@ -1,12 +1,12 @@
 [tool.poetry]
 name = "elevenlabs-haystack"
-version = "0.3.0"
+version = "0.4.0"
 description = "ElevenLabs Text-to-Speech components for Haystack."
 authors = ["Andy <andychert@protonmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = ">=3.8,<4.0"
 elevenlabs-s3 = "^0.3.0"
 haystack-ai = "^2.6.0"
 pytest-dotenv = "^0.5.2"
