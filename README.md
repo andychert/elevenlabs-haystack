@@ -4,25 +4,42 @@ This repository contains an integration of ElevenLabs' Text-to-Speech API with H
 
 ## Installation
 
-1. Install:
+```bash
+pip install elevenlabs_haystack
+```
 
-   ```bash
-   pip install elevenlabs_haystack
-   ```
+## Setting Up API Keys
 
-2. Set up environment variables for sensitive credentials.
+#### **ElevenLabs API Key**
 
-   Create a `.env` file in the root directory with the following content (replace with your actual credentials):
+To access the ElevenLabs API, you need to create an account and obtain an API key.
 
-   ```bash
-   ELEVENLABS_API_KEY=sk_your_elevenlabs_api_key_here
-   AWS_ACCESS_KEY_ID=your_aws_access_key_id
-   AWS_SECRET_ACCESS_KEY=your_aws_secret_access_key
-   AWS_REGION_NAME=us-east-1
-   AWS_S3_BUCKET_NAME=your_s3_bucket_name
-   ```
+1. Go to the [ElevenLabs](https://elevenlabs.ai/) website and sign up for an account.
+2. Once logged in, navigate to the **Profile** section.
+3. In the **API** section, generate a new API key.
+4. Copy the API key.
 
-   These variables will be automatically loaded using `dotenv` and used to access ElevenLabs and AWS services securely.
+#### **AWS Credentials**
+
+To store generated audio files on AWS S3, you need AWS credentials (Access Key ID, Secret Access Key) and specify a region.
+
+1. If you don’t have an AWS account, sign up at [AWS](https://aws.amazon.com/).
+2. Create a new IAM user and assign the necessary permissions to allow the user to upload files to S3. The `AmazonS3FullAccess` policy is sufficient for this example.
+3. Once the IAM user is created, download or note the **AWS Access Key ID** and **Secret Access Key**.
+4. Identify the **AWS Region** where your S3 bucket resides (e.g., `us-east-1`). This information can be found in the AWS Management Console.
+5. Finally, create or identify the S3 bucket where the generated audio files will be saved.
+
+Create a `.env` file in the root directory with the following content (replace with your actual credentials):
+
+```bash
+ELEVENLABS_API_KEY=sk_your_elevenlabs_api_key_here
+AWS_ACCESS_KEY_ID=your_aws_access_key_id
+AWS_SECRET_ACCESS_KEY=your_aws_secret_access_key
+AWS_REGION_NAME=us-east-1
+AWS_S3_BUCKET_NAME=your_s3_bucket_name
+```
+
+These variables will be automatically loaded using `dotenv` and used to access ElevenLabs and AWS services securely.
 
 ## Usage
 
@@ -140,29 +157,6 @@ print(result)
 }
 """
 ```
-
-### Example `.env` File
-
-Here's an example `.env` file containing environment variables:
-
-```bash
-ELEVENLABS_API_KEY=sk_your_elevenlabs_api_key_here
-AWS_ACCESS_KEY_ID=your_aws_access_key_id
-AWS_SECRET_ACCESS_KEY=your_aws_secret_access_key
-AWS_REGION_NAME=us-east-1
-AWS_S3_BUCKET_NAME=your_s3_bucket_name
-```
-
-### Running the Examples
-
-To run the examples:
-
-1. Ensure you have set up your environment variables in the `.env` file as shown above.
-2. Run your Python script:
-
-   ```bash
-   poetry run python your_script.py
-   ```
 
 ## License
 

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "elevenlabs-haystack"
-version = "0.2.0"
+version = "0.3.0"
 description = "ElevenLabs Text-to-Speech components for Haystack."
 authors = ["Andy <andychert@protonmail.com>"]
 readme = "README.md"
