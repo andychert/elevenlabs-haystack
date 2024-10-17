@@ -49,17 +49,17 @@ files = [
 
 [[package]]
 name = "boto3"
-version = "1.35.41"
+version = "1.35.42"
 description = "The AWS SDK for Python"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "boto3-1.35.41-py3-none-any.whl", hash = "sha256:2bf7e7f376aee52155fc4ae4487f29333a6bcdf3a05c3bc4fede10b972d951a6"},
-    {file = "boto3-1.35.41.tar.gz", hash = "sha256:e74bc6d69c04ca611b7f58afe08e2ded6cb6504a4a80557b656abeefee395f88"},
+    {file = "boto3-1.35.42-py3-none-any.whl", hash = "sha256:e1f36f8be453505cebcc3da178ea081b2a06c0e5e1cdee774f1067599b8d9c3e"},
+    {file = "boto3-1.35.42.tar.gz", hash = "sha256:a5b00f8b82dce62870759f04861747944da834d64a64355970120c475efdafc0"},
 ]
 
 [package.dependencies]
-botocore = ">=1.35.41,<1.36.0"
+botocore = ">=1.35.42,<1.36.0"
 jmespath = ">=0.7.1,<2.0.0"
 s3transfer = ">=0.10.0,<0.11.0"
 
@@ -68,13 +68,13 @@ crt = ["botocore[crt] (>=1.21.0,<2.0a0)"]
 
 [[package]]
 name = "botocore"
-version = "1.35.41"
+version = "1.35.42"
 description = "Low-level, data-driven core of boto 3."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "botocore-1.35.41-py3-none-any.whl", hash = "sha256:915c4d81e3a0be3b793c1e2efdf19af1d0a9cd4a2d8de08ee18216c14d67764b"},
-    {file = "botocore-1.35.41.tar.gz", hash = "sha256:8a09a32136df8768190a6c92f0240cd59c30deb99c89026563efadbbed41fa00"},
+    {file = "botocore-1.35.42-py3-none-any.whl", hash = "sha256:05af0bb8b9cea7ce7bc589c332348d338a21b784e9d088a588fd10ec145007ff"},
+    {file = "botocore-1.35.42.tar.gz", hash = "sha256:af348636f73dc24b7e2dc760a34d08c8f2f94366e9b4c78d877307b128abecef"},
 ]
 
 [package.dependencies]
@@ -256,13 +256,13 @@ websockets = ">=11.0"
 
 [[package]]
 name = "elevenlabs-s3"
-version = "0.3.1"
+version = "0.3.2"
 description = "A package that combines ElevenLabs TTS and AWS S3 upload."
 optional = false
 python-versions = "<4.0,>=3.8"
 files = [
-    {file = "elevenlabs_s3-0.3.1-py3-none-any.whl", hash = "sha256:133239a6f02d99a4a6192c6b6ef6743347b90e994f8eb5afd1f34f56097937d5"},
-    {file = "elevenlabs_s3-0.3.1.tar.gz", hash = "sha256:8639e5649ebce7db4ae129eff12247d09deee036013e12f2a1c469ce19335c9c"},
+    {file = "elevenlabs_s3-0.3.2-py3-none-any.whl", hash = "sha256:b4a9bd585c9c27d2db4013d9e33bb47e46a4a8dc29dec0b7d79b30e85536317c"},
+    {file = "elevenlabs_s3-0.3.2.tar.gz", hash = "sha256:9ef2c96ef6332896c7145aa0f338d221cc674ca4c49166071106ab62c297d46f"},
 ]
 
 [package.dependencies]
@@ -727,13 +727,13 @@ files = [
 
 [[package]]
 name = "openai"
-version = "1.51.2"
+version = "1.52.0"
 description = "The official Python library for the openai API"
 optional = false
 python-versions = ">=3.7.1"
 files = [
-    {file = "openai-1.51.2-py3-none-any.whl", hash = "sha256:5c5954711cba931423e471c37ff22ae0fd3892be9b083eee36459865fbbb83fa"},
-    {file = "openai-1.51.2.tar.gz", hash = "sha256:c6a51fac62a1ca9df85a522e462918f6bb6bc51a8897032217e453a0730123a6"},
+    {file = "openai-1.52.0-py3-none-any.whl", hash = "sha256:0c249f20920183b0a2ca4f7dba7b0452df3ecd0fa7985eb1d91ad884bc3ced9c"},
+    {file = "openai-1.52.0.tar.gz", hash = "sha256:95c65a5f77559641ab8f3e4c3a050804f7b51d278870e2ec1f7444080bfe565a"},
 ]
 
 [package.dependencies]
@@ -1386,4 +1386,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.8,<4.0"
-content-hash = "8b310684f83757c61287f2076453dd03ae466b7c701e995adf38e674c798e78f"
+content-hash = "563d0260e894011b0807af213478c0f2fe67053d53e06252a070784ab3b162e6"
